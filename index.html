@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app='bookshelfApp'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Bookshelf</title>
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js'></script>
+  <script src='application.js'></script>
+</head>
+<body ng-controller="BookshelfController">
+  <div ng-repeat='book in books'>
+    <h4>book title: {{ book }}</h4>
+  </div>
+</body>
+</html>

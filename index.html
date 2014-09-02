@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='bookshelfApp'>
+<head>
+  <meta charset='UTF-8'>
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js'></script>
+  <script src='application.js'></script>
+</head>
+<body ng-controller='BookshelfController'>
+  <div ng-repeat='book in books'>
+    <h3>Title: "{{ book }}"</h3>
+    <a href="#" ng-click='edit(book)'>Edit</a>
+    <a href="#" ng-click='delete(book)'>Delete</a>
+  </div>
+  <div>
+    <br>
+    <p>Title: "{{ newBook }}"</p>
+    <input type="text" placeholder='new book' autofocus ng-model='newBook'>
+    <a href="#" ng-click='add()'>Add Book</a>
+  </div>
+
+
+</body>
+</head>

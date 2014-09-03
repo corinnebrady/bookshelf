@@ -15,6 +15,7 @@ app.controller('BookshelfController', ['$scope', function(scope) {
 
   scope.edit = function(book) {
     scope.editing = book;
+    scope.editedBook = book;
 
   };
 
